@@ -25,6 +25,12 @@ kotlin {
             isStatic = true
         }
         extraSpecAttributes["resources"] = "['src/commonMain/resources/**', 'src/iosMain/resources/**']"
+        pod("AFNetworking") {
+            version = "~> 4.0.1"
+        }
+        pod("RevenueCat") {
+            version = "~> 4.15"
+        }
     }
 
     sourceSets {
